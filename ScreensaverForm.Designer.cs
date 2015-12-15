@@ -66,6 +66,7 @@
             this.MinimizeBox = false;
             this.Name = "ScreensaverForm";
             this.Text = "Form1";
+            this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.ScreensaverForm_Load);
             this.ResumeLayout(false);
