@@ -30,6 +30,7 @@
         {
             this.webBrowser = new System.Windows.Forms.WebBrowser();
             this.closeButton = new System.Windows.Forms.Button();
+            this.webBrowser.Visible = false;
             this.SuspendLayout();
             // 
             // webBrowser
@@ -57,6 +58,7 @@
             // ScreensaverForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.BackColor = System.Drawing.Color.Black;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
             this.Controls.Add(this.closeButton);

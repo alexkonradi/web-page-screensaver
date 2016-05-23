@@ -93,6 +93,7 @@ namespace pl.polidea.lab.Web_Page_Screensaver
             {
                 Debug.WriteLine($"Navigating: {url}");
                 webBrowser.Navigate(url);
+                webBrowser.DocumentCompleted += new WebBrowserDocumentCompletedEventHandler(webBrowser_DocumentCompleted);
             }
             catch
             {
@@ -100,6 +101,11 @@ namespace pl.polidea.lab.Web_Page_Screensaver
             }
 
             Application.AddMessageFilter(userEventHandler);
+        }
+
+        private void webBrowser_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+            webBrowser.Visible = true;
         }
 
         private void RotateSite()
